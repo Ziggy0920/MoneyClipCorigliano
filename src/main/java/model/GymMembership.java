@@ -26,7 +26,7 @@ public class GymMembership extends Card {
 
     // helper methods
     public String format(){
-        return super.format() + ", Card Number: " + cardNumber;
+        return super.format() + ", Membership Number: " + cardNumber;
     }
 
     // toString
