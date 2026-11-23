@@ -9,13 +9,18 @@ public class GymMembership extends Card {
         super();
     }
 
-    public GymMembership(String cardNumber){
+    public GymMembership(String name, String cardNumber){
+        super(name);
         this.cardNumber = cardNumber;
     }
 
     // getters and setters
-    public String getCardNumber(){
-        return this.cardNumber;
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
     }
 
     // toString

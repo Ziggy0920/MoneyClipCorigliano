@@ -9,13 +9,18 @@ public class EmployeeBadge extends Card {
         super();
     }
 
-    public EmployeeBadge(String badgeNumber){
+    public EmployeeBadge(String name, String badgeNumber){
+        super(name);
         this.badgeNumber = badgeNumber;
     }
 
     // getters and setters
-    public String getBadgeNumber(){
-        return this.badgeNumber;
+    public String getBadgeNumber() {
+        return badgeNumber;
+    }
+
+    public void setBadgeNumber(String badgeNumber) {
+        this.badgeNumber = badgeNumber;
     }
 
     // toString

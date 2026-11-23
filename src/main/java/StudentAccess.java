@@ -12,20 +12,30 @@ public class StudentAccess extends Card {
         super();
     }
 
-    public StudentAccess(String studentNumber, LocalDate expirationDate){
+    public StudentAccess(String name, String studentNumber, LocalDate expirationDate){
+        super(name);
         this.studentNumber = studentNumber;
         this.expirationDate = expirationDate;
     }
 
     // getters and setters
-    public String getStudentNumber(){
-        return this.studentNumber;
+    public String getStudentNumber() {
+        return studentNumber;
     }
 
-    public LocalDate getExpirationDate(){
+    public void setStudentNumber(String studentNumber) {
+        this.studentNumber = studentNumber;
+    }
+
+    public LocalDate getExpirationDate() {
         return expirationDate;
     }
 
+    public void setExpirationDate(LocalDate expirationDate) {
+        this.expirationDate = expirationDate;
+    }
+
+    // toString
     @Override
     public String toString() {
         return "StudentAccess{" +
