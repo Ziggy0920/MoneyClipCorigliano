@@ -1,4 +1,5 @@
 // subclass
+package model;
 
 public class GymMembership extends Card {
     // fields

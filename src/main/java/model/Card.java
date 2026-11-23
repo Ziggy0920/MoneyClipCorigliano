@@ -1,6 +1,7 @@
 // superclass
+package model;
 
-public class Card{
+public class Card {
     // fields
     private String name;
 

@@ -1,4 +1,5 @@
 // subclass
+package model;
 
 public class EmployeeBadge extends Card {
     // fields
@@ -21,6 +22,11 @@ public class EmployeeBadge extends Card {
 
     public void setBadgeNumber(String badgeNumber) {
         this.badgeNumber = badgeNumber;
+    }
+
+    // helper methods
+    public String format(){
+        return super.format() + ", Badge Number: " + badgeNumber;
     }
 
     // toString
