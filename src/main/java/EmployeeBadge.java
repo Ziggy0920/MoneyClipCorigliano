@@ -5,7 +5,9 @@ public class EmployeeBadge extends Card {
     private String badgeNumber;
 
     // constructor
-    public EmployeeBadge(){}
+    public EmployeeBadge(){
+        super();
+    }
 
     public EmployeeBadge(String badgeNumber){
         this.badgeNumber = badgeNumber;

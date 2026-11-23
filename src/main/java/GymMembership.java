@@ -5,7 +5,9 @@ public class GymMembership extends Card {
     private String cardNumber;
 
     // constructor
-    public GymMembership(){}
+    public GymMembership(){
+        super();
+    }
 
     public GymMembership(String cardNumber){
         this.cardNumber = cardNumber;
