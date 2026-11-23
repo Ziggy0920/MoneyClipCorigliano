@@ -2,6 +2,7 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class StudentAccess extends Card {
     // fields
@@ -41,12 +42,34 @@ public class StudentAccess extends Card {
         return super.format() + ", Student Number: " + studentNumber + ", ExpirationDate: " + expirationDate;
     }
 
-    // toString
+    @Override
+    public boolean isExpired(){
+        LocalDate currentDate = LocalDate.now();
+        if(expirationDate.isBefore(currentDate)){
+            return true;
+        }
+        return false;
+    }
+
+    // overrides
     @Override
     public String toString() {
         return "StudentAccess{" +
                 "studentNumber='" + studentNumber + '\'' +
                 ", expirationDate=" + expirationDate +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        StudentAccess that = (StudentAccess) o;
+        return Objects.equals(studentNumber, that.studentNumber) && Objects.equals(expirationDate, that.expirationDate);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), studentNumber, expirationDate);
     }
 }

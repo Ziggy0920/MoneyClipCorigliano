@@ -24,7 +24,16 @@ public class MoneyClip {
         }
     }
 
-    public String format(){
+    public String displayContents(){
         return "Slot 1: " + slot1.format() + " | Slot 2: " + slot2.format();
+    }
+
+    // overrides
+    @Override
+    public String toString() {
+        return "MoneyClip{" +
+                "slot1=" + slot1 +
+                ", slot2=" + slot2 +
+                '}';
     }
 }
