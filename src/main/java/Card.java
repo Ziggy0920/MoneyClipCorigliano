@@ -11,7 +11,7 @@ public class Card{
         this.name = name;
     }
 
-    // getters and setters
+    // helper methods
     public boolean isExpired(){
         return false;
     }

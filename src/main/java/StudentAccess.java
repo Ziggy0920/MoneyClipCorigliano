@@ -35,6 +35,11 @@ public class StudentAccess extends Card {
         this.expirationDate = expirationDate;
     }
 
+    // helper methods
+    public String format(){
+        return super.format() + ", Student Number: " + studentNumber + ", ExpirationDate: " + expirationDate;
+    }
+
     // toString
     @Override
     public String toString() {

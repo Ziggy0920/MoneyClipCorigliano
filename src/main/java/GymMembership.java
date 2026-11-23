@@ -23,6 +23,11 @@ public class GymMembership extends Card {
         this.cardNumber = cardNumber;
     }
 
+    // helper methods
+    public String format(){
+        return super.format() + ", Card Number: " + cardNumber;
+    }
+
     // toString
     @Override
     public String toString() {
