@@ -1,3 +1,5 @@
+// subclass
+
 public class EmployeeBadge extends Card {
     // fields
     private String badgeNumber;
